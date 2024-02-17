@@ -1,0 +1,6 @@
+projectKey=WebAPIApplication
+serverUrl=http://localhost:9000
+serverVersion=10.4.0.87286
+dashboardUrl=http://localhost:9000/dashboard?id=WebAPIApplication
+ceTaskId=5dad276f-cd31-4470-a917-73d3941d6c96
+ceTaskUrl=http://localhost:9000/api/ce/task?id=5dad276f-cd31-4470-a917-73d3941d6c96

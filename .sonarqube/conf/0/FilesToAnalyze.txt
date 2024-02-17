@@ -1,0 +1,15 @@
+﻿/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Controllers/AccountController.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Controllers/ApiController.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/HasScopeHandler.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/HasScopeRequirement.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Program.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/obj/Debug/net8.0/WebAPIApplication.AssemblyInfo.cs
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/appsettings.json
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/.dockerignore
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/.gitignore
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Dockerfile
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/exec.ps1
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/exec.sh
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/README.md
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Properties/launchSettings.json

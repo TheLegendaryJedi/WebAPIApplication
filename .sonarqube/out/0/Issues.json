@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-7.23572.1 (7b75981c)",
+        "semanticVersion": "4.8.0",
+        "language": "en-PT"
+      },
+      "results": [
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Program.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 1,
+                  "endLine": 31,
+                  "endColumn": 5
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4507",
+          "level": "warning",
+          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Program.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 5,
+                  "endLine": 55,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6605",
+          "level": "warning",
+          "message": "Collection-specific \"Exists\" method should be used instead of the \"Any\" extension.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/HasScopeHandler.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 24,
+                  "endLine": 19,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0025",
+          "level": "note",
+          "message": "Use AddAuthorizationBuilder to register authorization services and construct policies",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Program.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 1,
+                  "endLine": 46,
+                  "endColumn": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0014",
+          "level": "warning",
+          "message": "Suggest using top level route registrations instead of UseEndpoints",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/Program.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 5,
+                  "endLine": 75,
+                  "endColumn": 3
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "ASP0014": {
+          "id": "ASP0014",
+          "shortDescription": "Suggest using top level route registrations",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
+        "ASP0025": {
+          "id": "ASP0025",
+          "shortDescription": "Use AddAuthorizationBuilder",
+          "defaultLevel": "note",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4507": {
+          "id": "S4507",
+          "shortDescription": "Delivering code in production with debug features activated is security-sensitive",
+          "fullDescription": "Development tools and frameworks usually have options to make debugging easier for developers. Although these features are useful during development, they should never be enabled for applications deployed in production. Debug instructions or error messages can leak detailed information about the system, like the application’s path or file names.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4507",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6605": {
+          "id": "S6605",
+          "shortDescription": "Collection-specific \"Exists\" method should be used instead of the \"Any\" extension",
+          "fullDescription": "Both the List.Exists method and IEnumerable.Any method can be used to find the first element that satisfies a predicate in a collection. However, List.Exists can be faster than IEnumerable.Any for List objects, as well as requires significantly less memory. For small collections, the performance difference may be negligible, but for large collections, it can be noticeable. The same applies to ImmutableList and arrays too.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6605",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

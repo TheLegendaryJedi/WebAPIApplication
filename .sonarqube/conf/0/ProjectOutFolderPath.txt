@@ -1,0 +1,1 @@
+/Users/goncaloatanasio/RiderProjects/quickstart/01-authorization/.sonarqube/out/0
