@@ -38,6 +38,7 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
       - name: Print SONAR_TOKEN
+        shell: powershell
         run: echo ${{ secrets.SONAR_TOKEN }}
       - name: Build and analyze
         env:
